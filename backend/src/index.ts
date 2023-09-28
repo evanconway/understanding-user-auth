@@ -2,8 +2,8 @@ import https from "https";
 import fs from "fs";
 
 const options = {
-    key: fs.readFileSync("../certificate/server.key"),
-    cert: fs.readFileSync("../certificate/server.cert"),
+    key: fs.readFileSync("certificate/server.key"),
+    cert: fs.readFileSync("certificate/server.cert"),
 };
 
 const server = https.createServer(options, (req, res) => {
